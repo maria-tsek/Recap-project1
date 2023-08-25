@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Home page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />  
+  <script src="./index.js" defer></script>
 </head>
 <body>
   <header>
@@ -15,8 +16,9 @@
       <h2>Quiz time</h2>
       <div class="question-card">
         
-          <img class="bookmark" src="https://icons.veryicon.com/png/o/object/material-design-icons/bookmark-29.png" alt="black bookmark">
-        
+          <img id="bookmark-icon" class="bookmark" src="https://icons.veryicon.com/png/o/object/material-design-icons/bookmark-29.png" alt="black bookmark">
+
+
         <div class="question">Question 1: HTML is stand for...</div>
         <div class="choices">
         <button class="choice">Hyper Text Markup Language</button></a>
@@ -24,6 +26,9 @@
           <button class="choice">None of the above</button>
         </div>
         <button class="show-answer">Show answer</button>
+        <div class="answer" data-js="answer">
+          Answer: HTML stands for Hyper Text Markup Language.
+        </div>
         <div class="categories">
           <button class="html">#html</button>
           <button class="web development">#web development</button>
@@ -40,6 +45,9 @@
           <button class="choice">&lt; and &gt;</button>
         </div>
         <button class="show-answer">Show answer</button>
+         <div class="answer">
+          Answer: ALL HTML tags are enclosed in &lt; and &gt;
+        </div>
         <div class="categories">
           <button class="web development">#web development</button>
           <button class="html">#html</button>

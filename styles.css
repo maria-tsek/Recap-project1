@@ -128,17 +128,22 @@ main {
     color: black;
     padding: 10px 10px;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-top: 0.2rem; /* Adjust the margin-top value as needed */
     transition: background-color 0.3s;
 }
+
 
 .start-button:hover {
     background-color: lightgreen; /*It changes the background color of the button to blue when hovered.*/
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: pink;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .footer-links {
@@ -148,10 +153,11 @@ footer {
 }
 
 .footer-links img {
-    max-width: 100px;
+    max-width: 40px;
     height: auto;
     border: 2px solid black;
     border-radius: 5px; /*define the radius of the element's corners.*/
+
 }
 
 

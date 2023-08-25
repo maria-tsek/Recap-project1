@@ -121,10 +121,14 @@ main {
     background-color: lightgreen;
 }
 
-    footer {
-        background-color: pink;
-        padding: 20px 0;
-    }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: pink;
+    padding: 15px 0;
+}
     
     .footer-links {
         display: flex;
@@ -133,7 +137,7 @@ main {
     }
     
     .footer-links img {
-        max-width: 100px;
+        max-width: 40px;
         height: auto;
         border: 2px solid black;
         border-radius: 5px; /*define the radius of the element's corners.*/
