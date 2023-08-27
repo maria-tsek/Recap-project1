@@ -65,7 +65,7 @@ main {
   display: block;
   margin-top: 1rem;
   padding: 5px 10px;
-  background-color: white;
+  background-color: pink;
   color: black;
   border: none;
   border-radius: 5px;
@@ -76,7 +76,7 @@ main {
   border: 4px solid lightseagreen;
   padding: 3rem;
   margin-bottom: 2rem;
-  background-color: lightgreen;
+  background-color: white;
   border-radius: 5px;
 }
 

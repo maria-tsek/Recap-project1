@@ -1,6 +1,5 @@
 console.clear();
 
-//document.addEventListener("DOMContentLoaded", function () {
 const bookmarkIcon = document.getElementById("bookmark-icon");
 
 // keep track of the bookmark state
@@ -21,7 +20,6 @@ function toggleBookmark() {
 }
 
 bookmarkIcon.addEventListener("click", toggleBookmark);
-//});
 
 //answer button
 

@@ -17,20 +17,37 @@
     <main>
       <form>
         <div class="form-group">
-          <label for="your question">Your Question:</label>
-          <input type="text" id="your question" name="your question" required />
+          <label for="questionInput">Your Question:</label>
+          <input
+            type="text"
+            id="questionInput"
+            name="your question"
+            data-js="questionInput"
+            maxlength="150"
+            required
+          />
+          <span id="character-count-question"></span>
         </div>
         <div class="form-group">
-          <label for="your answer">Your Answer:</label>
-          <input type="text" id="your answer" name="your answer" required />
+          <label for="answerInput">Your Answer:</label>
+          <input
+            type="text"
+            id="answerInput"
+            name="your answer"
+            data-js="answerInput"
+            maxlength="150"
+            required
+          />
+          <span id="character-count-answer"></span>
         </div>
         <div class="form-group">
-          <label for="tag">tag:</label>
+          <label for="tagInput">Tag:</label>
           <textarea
             type="text"
-            id="tag"
+            id="tagInput"
             name="tag"
             rows="4"
+            data-js="tagInput"
             required
           ></textarea>
         </div>
@@ -38,6 +55,7 @@
           <button id="submit" class="submit">Submit</button>
         </div>
       </form>
+      <div id="card-container"></div>
     </main>
     <footer>
       <div class="footer-links">
@@ -56,7 +74,7 @@
             src="https://a.allegroimg.com/s1024/0ccb44/69d83eaf4943908568db8aa046f1"
             alt="profile"
         /></a>
-        <a href="formpage"
+        <a href="form.html"
           ><img
             src="https://icons.veryicon.com/png/o/miscellaneous/share-308-box/add-user-18.png"
             alt="formpage"
