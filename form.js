@@ -61,10 +61,32 @@ form.addEventListener("submit", (event) => {
     });
   }
 
+  function hideAnswer() {
+    answerDiv.setAttribute("hidden", "");
+  }
+
+  function showAnswer() {
+    answerDiv.removeAttribute("hidden");
+  }
+
+  hideAnswer();
+
+  answerButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (answerButton.textContent === "Show Answer") {
+      showAnswer();
+      answerButton.textContent = "Hide Answer";
+    } else {
+      hideAnswer();
+      answerButton.textContent = "Show Answer";
+    }
+  });
+
   // Append the elements to the card
   card.appendChild(bookmarkIcon);
   card.appendChild(questionDiv);
   card.appendChild(answerDiv);
+  card.appendChild(answerButton);
   card.appendChild(tagDiv);
 
   // Append the card to the page
