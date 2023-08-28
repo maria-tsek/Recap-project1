@@ -28,6 +28,22 @@ main {
   margin: 0 auto;
   padding: 4rem;
 }
+.mode {
+  border-radius: 6px;
+  position: relative;
+  transition: var(--tran-05);
+}
+
+.mode .sun-moon {
+  height: 50px;
+  width: 60px;
+}
+.mode .sun-moon i {
+  position: absolute;
+}
+.mode .sun-moon i.sun {
+  opacity: 0;
+}
 
 footer {
   position: fixed;
