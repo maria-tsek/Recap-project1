@@ -3,6 +3,7 @@ const form = document.querySelector("form");
 const questionInput = document.querySelector('[data-js="questionInput"]');
 const answerInput = document.querySelector('[data-js="answerInput"]');
 const tagsInput = document.querySelector('[data-js="tagInput"]');
+const showAnswerInput = document.getElementsByClassName("show-answer");
 
 const characterCountQuestion = document.getElementById(
   "character-count-question"
@@ -34,6 +35,9 @@ form.addEventListener("submit", (event) => {
   const answerDiv = document.createElement("div");
   answerDiv.classList.add("answer");
   answerDiv.textContent = `Answer: ${answer}`;
+
+  const answerButton = document.createElement("button");
+  answerButton.textContent = "Show Answer";
 
   const tagDiv = document.createElement("div");
   tagDiv.classList.add("categories");
@@ -80,7 +84,6 @@ form.addEventListener("keyup", (event) => {
     //get input value and length
     const valueLength = event.target.value.length;
     const maxCharacters = event.target.getAttribute("maxLength");
-
     if (event.target === questionInput) {
       characterCountQuestion.textContent = `${
         maxCharacters - valueLength
